@@ -10,6 +10,9 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}
 
 # print out the name of the second child
 
+for item in person["children"]:
+    if item == 1:
+        print()
 
 # print out the name of the cat
 

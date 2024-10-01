@@ -1,3 +1,4 @@
+'''
 import random
 
 phonebook = {'Chris':'555−1111',
@@ -10,7 +11,17 @@ print()
 print('*****  start section 1 - print dictionary ********')
 print()
 
+print(phonebook)
 
+print(len(phonebook))
+
+mydict = {}
+print(mydict)
+
+mydict = dict(m=8, n=9)
+print(mydict)
+
+print(type(phonebook))
 
 
 
@@ -72,7 +83,7 @@ print()
 
 
 
-
+'''
 
 
 print()
@@ -81,7 +92,13 @@ print()
 
 
 
+for k in phonebook:
+    print(f"The name is {k} and the phone number is {phonebook[k]}")
 
+for value in phonebook.values():
+    print(f"The phone number is {value}")
+
+for item in phonebook.items():
 
 
 print()
@@ -127,7 +144,9 @@ print('*****  start section 8 - using popitem ********')
 print()
 
 
-
+a = phonebook.popitem()
+print(a)
+print(phonebook)
 
 
 
@@ -141,9 +160,12 @@ print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
-
-
-
+list_of_keys = list(phonebook)
+print(list_of_keys)
+random_key = random.choice(list_of_keys)
+print(random_key)
+phone = phonebook[random_key]
+print(phone)
 
 print()
 print('*****  end section 9 ********')

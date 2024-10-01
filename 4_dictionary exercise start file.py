@@ -2,10 +2,10 @@
 
 def main():
     # Create a deck of cards.
-   
+    create_deck()
 
     # Get the number of cards to deal.
-    num_cards = int(input('How many cards should I deal? '))
+    number = int(input('How many cards should I deal? '))
 
 
 
@@ -54,7 +54,7 @@ def create_deck():
 
 def deal_cards(deck, number):
     # Initialize an accumulator for the hand value.
-
+    for x
     
     
     # DATA VALIDATION

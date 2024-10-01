@@ -47,3 +47,15 @@ datastore = { "medical":[
 
       ]
 }
+
+import csv
+
+with open('retail_space.csv', 'w') as outfile:
+  csv_outfile = csv.writer(outfile)
+  csv_outfile.writerow('room-number,use,sq-ft,price\n')
+  for l in datastore['medical']:
+    roomno = l['room-number']
+    use = l['use']
+    sqft = l['sq-ft']
+    price = l['price']
+    csv_outfile.writerow(f"{roomno}{use}{sqft}{price}\n")
